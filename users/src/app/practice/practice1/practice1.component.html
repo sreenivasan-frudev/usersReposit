@@ -1,1 +1,9 @@
-<p>practice1 works!</p>
+<p-card >
+  <form class="max-w-min">
+    <h2 style="color:blueviolet;font-size: 30px;">login form</h2>
+    <formly-form [form]="logInForm" [fields]="formField" [model]="logInModel"></formly-form>
+    <br>
+    <p-button label="LogIn" [disabled]="!logInForm.valid"  type="submit"></p-button>
+  </form>
+</p-card>
+

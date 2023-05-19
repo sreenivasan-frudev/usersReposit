@@ -1,0 +1,12 @@
+
+
+<div class="container">
+  <p-card styleClass="ml-8">
+    <h2 class="text-primary ml-8">Register Form</h2>
+  <form >
+    <formly-form [form]="RegisterForm" [fields]="RegisterField" [model]="RegisterModel"></formly-form>
+  </form>
+  <br><br>
+  <p-button label="Register" [disabled]="!RegisterForm.valid"  type="submit" styleClass="w-5 "></p-button>
+</p-card>
+</div>
